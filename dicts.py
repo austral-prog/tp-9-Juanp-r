@@ -21,7 +21,7 @@ def decrement_items(inventory, items):
     for i in inventory:
         if i in inventario2:
             if inventario2[i] > inventory[i]:
-                inventory[1]=0
+                inventory[i]=0
             else:
                 inventory[i]= inventory[i] - inventario2[i]
     return inventory
