@@ -17,13 +17,12 @@ def add_items(inventory, items):
     return inventory
 
 def decrement_items(inventory, items):
-    inventario2 = create_inventory(items)
-    for i in inventory:
-        if i in inventario2:
-            if inventario2[i] > inventory[i]:
+    for i in items:
+        if i in inventory:
+            if items.count[i] > inventory[i]:
                 inventory[i]=0
             else:
-                inventory[i]= inventory[i] - inventario2[i]
+                inventory[i]= inventory[i] - items.count[i]
     return inventory
 
 def remove_item(inventory, item):
